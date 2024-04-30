@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <script>
+       
+        function greetUser() {
+            var color = prompt("Enter your favorite color:");
+            document.write("Welcome! Your favorite color is " + color + ".");
+        }
+
+        
+        greetUser();
+
+        document.write("<br><br>");
+
+
+        function calculateArea(width, height) {
+            return width * height;
+        }
+
+        
+        var width = prompt("Enter the width:");
+        var height = prompt("Enter the height:");
+
+       
+        width = parseFloat(width);
+        height = parseFloat(height);
+
+        
+        var area = calculateArea(width, height);
+
+        
+        document.write("The area of the rectangle is: " + area);
+    </script>
+</body>
+</html>
